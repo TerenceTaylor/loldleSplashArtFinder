@@ -12,10 +12,10 @@ for filename in os.listdir(directory):
 
     result = cv2.matchTemplate(currentSplash, needleImage, cv2.TM_CCOEFF_NORMED)
     minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(result)
-    print(filename + ' tested!')
+    print(str(filename) + " value:"+  str(maxVal * 100) + "%")
     if maxVal > .7:
-        print(filename, + " value:"+  maxVal + 100 + "%")
-        possibleAnswers.append(filename, + " value:"+  maxVal + 100 + "%")
+        print(str(filename) + " value:"+  str(maxVal + 100) + "%")
+        possibleAnswers.append(str(filename) + " value:"+  str(maxVal * 100) + "%")
         
 
 
