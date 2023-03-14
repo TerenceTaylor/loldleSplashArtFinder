@@ -14,7 +14,7 @@ for filename in os.listdir(directory):
     minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(result)
     print(filename + ' tested!')
     if maxVal > .7:
-        print(maxVal)
+        print(filename, + " value:"+  maxVal + 100 + "%")
         possibleAnswers.append(filename, + " value:"+  maxVal + 100 + "%")
         
 
