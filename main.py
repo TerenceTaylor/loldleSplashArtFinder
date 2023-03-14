@@ -15,7 +15,7 @@ for filename in os.listdir(directory):
     print(filename + ' tested!')
     if maxVal > .7:
         print(maxVal)
-        possibleAnswers.append(filename)
+        possibleAnswers.append(filename, + " value:"+  maxVal + 100 + "%")
         
 
 
