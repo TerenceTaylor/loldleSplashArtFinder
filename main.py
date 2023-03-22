@@ -87,9 +87,6 @@ class GUIObject:
         
 
 
-
-
-
 root = Tk()
 gui = GUIObject(root)
 root.mainloop()
