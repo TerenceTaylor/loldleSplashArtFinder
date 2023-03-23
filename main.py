@@ -64,7 +64,7 @@ class GUIObject:
             #Print and display the file currently being checked + % accuracy
             print(str(filename) + " value:"+  str(maxVal * 100) + "%")
             self.fileNameLabel.config(text= str(filename) + " value:"+  str(maxVal * 100) + "%")
-            if maxVal > .7:
+            if maxVal > .9:
                 print(str(filename) + " value:"+  str(maxVal * 100) + "%")
                 possibleAnswers.append(str(filename) + " value:"+  str(maxVal * 100) + "%")
 
